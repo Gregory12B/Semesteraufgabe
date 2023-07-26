@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+	<meta charset="utf-8" />
+	<title>Angebote</title>
+	<link rel="stylesheet" href="United.css"/>
+
+
+</head>
+
+
+<body class="secondbody">
+
+
+<div class="navbar">
+
+  	<a href="Angebote.html">Zurück zu den Angeboten</a>
+
+
+</div>
+
+
+<div>
+
+
+
+
+
+</div>
+
+
+<div class="content" >
+
+
+
+      <h1> Pick des Monats : Juli </h1>
+
+
+      <p> Diesen Monat ist der <em> Flammkuchen </em> als Pick in unserer Speisekarte präsent. </p>
+
+      <p> Unser Flammkuchen, inspiriert von der köstlichen Küche des Elsass, wird dich mit jedem Bissen verzaubern.
+
+      Unsere hauchdünnen Teigfladen, meisterhaft handgemacht, sind die perfekte Leinwand für eine himmlische Kombination aus cremiger Creme Fraiche, herzhaftem Speck und verlockend süßen Zwiebeln. Ein Geschmackserlebnis, das deine Sinne betört!
+
+      </p>
+
+          <p> In unserem Formular das du unten findest kannst du einen Style deines Flammkuchens bestellen.
+
+              <br> Natürlich nehmen wir auch kleine Änderungen und Wünsche an den Bestellungen entgegen </br>
+
+          </p> 
+
+
+
+
+</div>
+
+
+
+<div class="carousel">
+   <figure class="carousel-container">
+     <img src="Flamm1.jpg" alt="" class="carousel-item">
+     <img src="Flamm2.jpg" alt="" class="carousel-item">
+     <img src="Flamm3.jpg" alt="" class="carousel-item">
+   </figure>
+ </div>
+
+
+<div class="form">
+
+  <h1>Flammkuchen Bestellformular</h1>
+    <form action="submit.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Telefonnummer:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="flavor">Styles:</label>
+      <select id="flavor" name="flavor" required>
+        <option value="classic">Klassisch</option>
+        <option value="vegetarian">Vegetarisch</option>
+        <option value="cheese-lover">Käseliebhaber</option>
+        <option value="sweet">Süß</option>
+      </select>
+
+      <label for="quantity">Anzahl:</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+      <label for="notes">Anmerkungen:</label>
+      <textarea id="notes" name="notes" rows="4"></textarea>
+
+      <input type="submit" value="Bestellung abschicken">
+    </form>
+
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,281 @@
+
+
+/* Weitere CSS-Stile für den Rest der Webseite */
+
+
+body {
+  background-color: #f3f9d2;
+  color: #2f2f2f;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.secondbody{
+  background-image: linear-gradient(to right top, #f7d36c, #ecd069, #e1cd66, #d6ca63, #cbc761, #c2c45f, #b8c25e, #afbf5d, #a4bc5c, #9ab85b, #8fb55b, #85b15b);
+  color: #2f2f2f;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#video-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: #fff;
+    font-size: 24px;
+
+}
+
+h1, h2, h3 {
+  color: #FFFFFF;
+  font-size: 50px
+}
+
+
+
+p {
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: lighter;
+  padding: px;
+  margin: 20px;
+}
+
+.p1 {
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight:bold;
+}
+
+
+
+
+a {
+  display: flex;
+  flex-direction: row;
+  color: green;
+  font-size:  30px
+
+}
+
+
+a:hover {
+
+  color: white;
+}
+
+
+.header {
+  color: white
+  padding: 20px;
+}
+
+
+/*Css für die Speisendetailseite */
+
+
+
+/* ... (weitere vorhandene CSS-Stile) ... */
+
+.carousel {
+  width: 100%;
+  height: 500px;
+  perspective: 500px;
+  overflow: clip;
+}
+
+.carousel-container {
+  width: 300%; /* Drei Bilder erfordern die dreifache Breite des Containers */
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: transform 1s ease;
+}
+
+.carousel-item {
+  flex: 0 0 26.666%; /* Da drei Bilder gleichzeitig sichtbar sind, teilen wir die Breite gleichmäßig auf (100% / 3 = 33.333%) */
+  height: 100%;
+  object-fit: none;
+  transform-style: preserve-3d;
+}
+
+.carousel-item:not(:first-child) {
+  margin-left: 1%; /* Abstand zwischen den Bildern */
+}
+
+/* Animation für das Carousel */
+@keyframes rotate-carousel {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-66.666%); /* Da zwei Containerbreiten sichtbar sind, verschieben wir nur um 66.666% */
+  }
+}
+
+/* Carousel-Animation aktivieren */
+.carousel:hover .carousel-container {
+  animation: rotate-carousel 30s linear infinite;
+}
+
+
+
+
+
+
+ul { list-style: none
+
+
+
+
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 30px;
+  grid-gap: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  border-color: transparent;
+  justify-content: flex-starts;
+}
+
+
+
+
+.content {
+  background-color: rgba(255, 255, 255, 0)
+  flex: 1 1 300px;
+  padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+
+}
+
+
+.content 2{
+  background-color: rgba(255, 255, 255, 0)
+  flex: 1 1 300px;
+  padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0)
+  flex: 300px;
+  padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    flex-direction: row;
+    font-size: 20px
+
+}
+
+.footer {
+  background-color: #93827f;
+  color: #f3f9d2;
+  padding: 20px;
+}
+
+
+.Bildliste {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+
+
+
+/* ... (existing CSS styles) ... */
+
+/* CSS for the form */
+form {
+
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  color: #greens;
+}
+
+select {
+  background-color: transparent;
+  color: #green;
+}
+
+input[type="number"] {
+  width: 50px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #white;
+  color: #green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #green;
+}
+
+/* Adjust the font color for the form input labels */
+#video-content label {
+  color: #fff;
+}
